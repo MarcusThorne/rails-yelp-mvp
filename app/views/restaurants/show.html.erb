@@ -4,6 +4,7 @@
 <p><%= @restaurant.category %></p>
 
 <%= link_to "Add Review", new_restaurant_review_path(@restaurant.id), class: "btn btn-primary button" %>
+<%= link_to "Home", restaurants_path, class: "btn btn-primary button" %>
 
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
